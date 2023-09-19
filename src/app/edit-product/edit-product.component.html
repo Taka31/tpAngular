@@ -1,0 +1,29 @@
+<h1>Mon Produit</h1>
+
+<div>
+    <label>
+        REFERENCE : {{myProduct!.id}}
+    </label>
+</div>
+<div>
+    <label>
+        NOM : {{myProduct!.nom}}
+    </label>
+</div>
+<div>
+    <label>
+        DESCRIPTION  : {{myProduct!.description}}
+    </label>
+</div>
+<div>   
+    <label>
+        PRIX : {{myProduct!.prix}}
+    </label>
+</div>
+<a routerLink="/">Retour</a>
+<br /><br />
+
+
+<h1>Formulaire de modification</h1>
+
+<app-template-form [nomBouton]="nomBouton" [nom]=myProduct!.nom [description]=myProduct!.description [id]=myProduct!.id [prix]=myProduct!.prix (submit)="receiveData($event)"></app-template-form>

@@ -1,0 +1,35 @@
+<h1> Ma liste de produit </h1>
+
+<a routerLink="/creation">Creer nouveau produit</a>
+<br /><br />
+
+<div *ngFor='let product of myProducts'>
+    <div>
+        <label>
+            REFERENCE : {{product.id}}
+        </label>
+    </div>
+    <div>
+        <label>
+            NOM : {{product.nom}}
+        </label>
+    </div>
+    <div>
+        <label>
+            DESCRIPTION  : {{product.description}}
+        </label>
+    </div>
+    <div>
+        <label>
+            PRIX : {{product.prix}}
+        </label>
+    </div>
+    <div>
+        <a routerLink="/modifier-produit/{{product.id}}">Lien</a>
+    </div>
+    <br /><br />
+</div>
+
+
+
+

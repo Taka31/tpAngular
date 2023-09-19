@@ -1,0 +1,26 @@
+<div>
+    <label>
+        REFERENCE :
+        <input name="id " [(ngModel)]="id"/>
+    </label>
+</div>
+<div>
+    <label>
+        NOM : 
+        <input name="nom " [(ngModel)]="nom"/>
+    </label>
+</div>
+<div>
+    <label>
+        DESCRIPTION  : 
+        <input name="description " [(ngModel)]="description"/>
+    </label>
+</div>
+<div>   
+    <label>
+        PRIX : 
+        <input name="prix " [(ngModel)]="prix"/>
+    </label>
+</div>
+<br />
+<button (click)="postData()">{{nomBouton}}</button>
